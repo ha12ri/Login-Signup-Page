@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Dancing+Script&family=Josefin+Sans:wght@200&family=Montserrat:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 100%;
+}
+
+/* 
+==================== Font Family & Colors ====================
+
+Dancing Script - Regular 400
+Josefin Sans - ExtraLight 200
+Montserrat  - Light 300
+Baloo Bhai 2 - Medium 500
+
+*/
+
+:root{
+    --Dancing-Script: 'Dancing Script';
+    --Josefin-Sans: 'Josefin Sans';
+    --Baloo-Bhai : 'Baloo Bhai 2';
+    --Montserrat : 'Montserrat';
+    --white : #fff;
+    --Russion-Voilet : #0A0439;
+    --Han-Blue : #3F6BD0;
+    --Beau-Blue : #B5D2EC;
+    --Persian-Indigo : #34168F;
+    --purple: #5A1C9Dff;
+    --rebecca-purple: #7A2FA6ff;
+    --russian-violet: #1B0742ff;
+    --green : #4CBB17;
+    --red : #FF0000;
+
+}
+
+/* ==================== Body ==================== */
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: center no-repeat url('./images/background.jpg');
+    background-size: cover; 
+    display: flex; align-items: center; justify-content: center;
+}
+
+/* ==================== container ==================== */
+
+.container{
+    position: relative;
+    width:70%;
+    height:92%;
+    background: var(--white);
+    border-radius: 0.8rem;
+    border: 0.2rem solid var(--white); 
+    
+}
+
+/* ==================== gif-icon-sec ==================== */
+
+.gif-icon-sec{
+    width: fit-content;
+    height:100%;
+    position: relative;
+    background-color: var(--Han-Blue);
+    border-radius: 0.8rem;
+}
+
+/* ==================== form-sec ==================== */
+
+.form-sec{
+    width:100%;
+    height:100%;
+    flex-direction: column;
+}
+ 
+/* ==================== Common-Properites ==================== */
+
+.form-sec,.gif-icon-sec,.container{
+    display: flex; align-items: center; justify-content: center;
+}
+
+/* ==================== form-sec heading ==================== */
+
+#heading{
+    margin-bottom: 1rem;
+}
+
+#heading h2{
+    font-family: var(--Dancing-Script);
+    font-size:2rem;
+    color: var(--purple);
+    width:100%;
+    text-align: center;
+}
+
+#heading p{
+    font-size: 1.2rem;
+    font-family: var(--Josefin-Sans);
+    color: var(--purple);
+}
+
+
+/* ==================== sign-form sub-sec ==================== */
+
+#sign-form{
+    width: 100%;
+    height: auto;
+    margin-left: 4rem;
+}
+
+.sub-sec{
+    width:100%;
+    height:auto;
+}
+
+.input-sec{
+    font-size: 1rem;
+    font-family: var(--Baloo-Bhai);
+    color: var(--purple);
+}
+
+.input-sec input{
+    padding: 0.5rem 1rem;
+    border: 0.01rem solid var(--Han-Blue);
+    width: 40vw;
+    border-radius: 0.2rem;
+    font-size: 0.8rem;
+    font-family: var(--Montserrat);
+}
+.input-sec input:focus{
+   outline: none;
+}
+
+.input-sec input::placeholder{
+    font-size: 0.7rem;
+    font-family: var(--Montserrat);
+}
+
+.mess-sec{
+    margin: 0.3rem 0rem;
+    font-size: 0.7rem;
+    font-family: var(--Montserrat);
+    color: var(--purple);
+    font-weight: 500;
+}
+
+.sub-sec button{
+    padding: 0.4rem 2rem;
+    background-color: var(--Persian-Indigo);
+    font-size: 1rem;
+    font-family: var(--Baloo-Bhai);
+    color: var(--white);
+    border: 0px;
+    margin-top: 0.5rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+.sub-sec button a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+.sub-sec button:hover{
+    background-color: vaR(--purple);
+}
+
+.fa-lock{
+    color: var(--white);
+    padding-right: 0.2rem;
+}
+
+/* ==================== POP UP ==================== */
+
+#popup{
+
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background-color: var(--Beau-Blue);
+    width:30vw;
+    height:30vh;
+    display: flex; align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border: 0px;
+    border-radius: 0.5rem;
+    color: var(--Persian-Indigo);
+    font-size: 1rem;
+    font-family: var(--Baloo-Bhai);
+    border: 0.2rem solid var(--Russion-Voilet);
+}
+#popup button{
+    padding: 0.3rem 2rem;
+    border: 0px;
+    background-color: var(--Persian-Indigo);
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-family: var(--Baloo-Bhai);
+    border-radius: 0.2rem;
+}
+#popup a{
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    color: var(--white);
+}
+
+
+/* ==================== WELCOME PAGE CSS ==================== */
+
+
+.container-box{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--white);
+    border-radius: 0.6rem;
+}
+
+nav{
+    width: 100%;
+    height: 5rem;
+    background-color: var(--Han-Blue);
+    display: flex; 
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0rem 2rem;
+    border-radius: 0.5rem;
+    color: var(--white);
+}
+
+.logo{
+    font-size: 1rem;
+    font-family: var(--Baloo-Bhai);
+    color: var(--Russion-Voilet);
+}
+
+.nav-btns ul{
+    width:11rem;
+    height:100%;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    
+}
+
+.nav-btns ul li{
+    font-size: 1rem;
+    font-family: var(--Montserrat);
+}
+
+.nav-btns ul a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+main{
+    width:100%;
+    height: 100%;
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    width: 80%;
+    height:20rem;
+}
+
+.box h2{
+    font-size: 5rem;
+    font-family: var(--Montserrat);
+    color: var(--Han-Blue);
+}
+
+.box h2 span{
+    color: var(--Persian-Indigo);
+}
+
+.box p{
+    font-size: 1rem;
+    font-family: var(--Josefin-Sans);
+    margin-top: 0.5rem;
+    font-weight: 900;
+    
+}
+
+.box h4{
+    font-size: 1rem;
+    font-family: var(--Baloo-Bhai);
+    margin-top: 1rem;
+    color: var(--Russion-Voilet);
+    
+}
+
+#about_mtc{
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 10rem;
+    border: 0.2rem solid var(--green);
+}
+
+#about_mtc a{
+    text-decoration: none;
+    color: var(--green);
+    font-size: 1rem;
+    font-family: var(--Baloo-Bhai);
+}
+
+/* ==================== MEDIA QUERIES ==================== */
+
